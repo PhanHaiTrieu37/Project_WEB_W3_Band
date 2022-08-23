@@ -1,0 +1,581 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: helvetica, arial, sans-serif;
+}
+
+/* common */
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff     !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.col-full {
+    width: 100% !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mb-16 {
+    margin-bottom: 16px !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+} 
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pd-8 {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 11px 16px;
+    display: inline-block;
+    border: none;
+
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+/* 
+1. từ ngoài vào trong
+2. từ trên xuống dưới
+3. từ bao quát đến cự thể
+ */
+
+/*
+1. vị trí
+2. kích thước
+3. màu sắc
+4. kiểu dáng (kiểu chữ, hình tròng, vuông, ...) 
+ */
+#main {
+    /* position: relative; */
+}
+
+#header {
+    height: 46px;
+    width: 100%;
+    background-color: #000 ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+
+}
+
+#nav > li{
+    display: inline-block; /* sort cho li thành hàng dọc */
+    /* float: left; */
+    
+    
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a{
+    /* position: absolute; */
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav li a {
+    
+    text-decoration: none; /* xóa gạch dưới của thẻ li */
+    line-height: 46px; /* căn giữa */
+    display: block; /* đổ màu cho cả khổi li */
+    padding: 1px 24px;/* cách đều giữa các chữ */
+    
+}
+
+#nav > li:hover i,
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
+}
+    
+
+#nav .subnav a{
+    color: #000;
+    padding-left: 16px;
+}
+
+#nav .subnav > li {
+    list-style-type: none;
+    /* display: block; */
+}
+
+#header .nav-imenu-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none;
+}
+
+
+#header .nav-imenu-btn,
+#header .nav-isearch{
+    /* display: inline-block; */
+    float: right;
+    line-height: 46px ;
+    padding: 0px 21px;
+}
+
+#header .nav-imenu-btn,
+#header .fa-solid {
+    font-size: 20;
+    color: #fff;
+}
+
+#header .nav-isearch:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .nav-imenu-btn:hover {
+    background-color: #ccc; 
+}
+
+#header .nav-imenu-btn:hover .imenu {
+    color: #000;
+}
+
+#nav .subnav  li a{
+    /* display: block; */
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    margin-right: -18px;
+    padding-top: 50%;
+    background: url(/assest/img/chicago.jpg) top center / cover no-repeat; 
+}
+
+#slider .text-slider{
+    position: absolute;
+    bottom: 0px;
+    padding: 32px 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+
+
+}
+
+#slider .heading2-slider {
+    font-weight: 500;   
+    margin: 10px 0 ;
+
+}
+
+#slider .p-content-Chicago {
+    padding: 15px 0 ;
+
+}
+
+#content {
+    margin-right: -18px;
+}
+/* About */
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0px 48px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+#content .section-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+    opacity: 0.6;
+
+}
+
+#content .about-text{
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    
+
+}
+
+#content .member-list{
+    width: 786px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 112px;
+}
+
+#content .member-name{
+    margin: 15px 0;
+    font-size: 15px;
+
+}
+
+#content .member-img{
+    width: 154px;
+    border-radius: 4px;
+
+}
+
+/* Tour */
+
+.tour-date{
+    background-color: #000;
+}
+
+.tickets-list {
+    background-color: #fff;
+    margin-top: 40px;
+    font-size: 15px;
+    
+}
+
+.tickets-list li {
+    padding: 10px 16px;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+
+}
+
+#content .sold-out {
+    font-size: 15px;
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 7px;
+    margin-left: 18px;
+
+}
+
+#content .quality {
+    font-size: 15px;
+    float: right;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+    margin-top: -3px;
+    margin-right: 19px;
+
+}
+
+/* Tickets tour */
+
+#content .place-list{
+    padding-bottom: 40px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    
+}
+
+#content .place-img{
+    width: 100%;
+    display: block;
+}
+
+#content .place-img:hover {
+    opacity: 0.6;
+}
+
+#content .place-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+    
+
+}
+
+#content .place-heading{
+    margin-top: 7px;
+    margin-bottom: 15px;
+    font-weight: 550;
+    font-size: 15px;
+    
+
+}
+
+#content .place-time{
+    color: #757575;
+    margin-bottom: 15px;
+
+}
+
+#content .place-desc{
+    line-height: 1.5;
+    margin-bottom: 15px;
+
+}
+
+/* modal */
+#modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none   ;
+}
+
+#modal.open {
+    display: flex;
+}
+
+#modal .modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 300px;
+    position: relative;
+    animation: modalFaceIn ease 0.4s;
+}
+
+#modal .modal-close {
+    position: absolute;
+    color: #fff;
+    right: 0px;
+    top: 0px;
+    padding: 16px 18px;
+    cursor: pointer;
+    
+}
+
+#modal .modal-close:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#modal .modal-header {
+    
+    font-size: 30px;
+    color: #fff;
+    background: #009688;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 47px 16px;
+    letter-spacing: 4px;
+    
+}
+
+#modal .modal-header-icon{
+    margin-right: 16px;
+
+}
+
+#modal .modal-body {
+    padding: 14px;
+    font-size: 15px;
+    
+}
+
+#modal .modal-label {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    
+}
+
+.modal-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+
+#modal .modal-pay {
+    color: #fff;
+    background: #009688;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    
+}
+
+#modal .modal-pay:hover {
+    
+    opacity: 0.9;
+
+}
+
+#modal .modal-footer {
+    float: right;
+    margin: 24px 0;
+    
+}
+
+#modal .modal-help {
+    color: #2196F3;
+    
+}
+/* contact */
+.contact-content {
+    margin-top: 45px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="fa-"] {
+    width: 30px;
+    display: inline-block;
+
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* map */
+.map-list {
+    width: 100%;
+}
+
+#footer {
+    text-align: center;
+    padding: 64px 16px;
+
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+
+#footer .social-list a {
+    color: rgba(0,0,0,.6 );
+}
+
+#footer .powered a:hover,
+#footer .social-list a:hover {
+    color: rgba(0,0,0,.4);
+}
+
+#footer .powered {
+    font-size: 15px;
+    color: rgba(0,0,0,.6 );
+    margin: 15px 0;
+}
+
+#footer .powered a {
+    color: rgba(0,0,0,.6 );
+
+}
+
+@keyframes modalFaceIn {
+    from {
+        opacity: 0.5;
+        transform: translateY(-236px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0px);
+    }
+}
